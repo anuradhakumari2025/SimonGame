@@ -4,6 +4,15 @@ let started = false;
 let level = 0;
 let p = document.querySelector("p");
 let btns = ["yellow", "green", "red", "blue"];
+
+// Event listener for any touch or click outside the game boxes to start the game
+document.body.addEventListener("click", function (e) {
+  if (!started && !e.target.closest(".box")) {  // Check if the click is outside the game boxes
+    started = true;
+    levelUp();
+  }
+});
+
 document.addEventListener("keydown", function () {
   if (!started) {
     // console.log("game is started");
