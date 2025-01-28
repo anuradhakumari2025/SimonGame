@@ -48,9 +48,10 @@ function checkAns(idx) {
     p.style.fontSize = `2rem`;
     document.querySelector("body").style.background = `rgb(255, 10, 30)
 `;
-console.log("color chaged")
     setTimeout(function () {
-      document.querySelector("body").style.background =  `linear-gradient(to right, #000428, #004e92)`;
+      document.querySelector(
+        "body"
+      ).style.background = `linear-gradient(to right, #000428, #004e92)`;
     }, 350);
     reset();
   }
@@ -67,6 +68,7 @@ function btnPress() {
 let allBtns = document.querySelectorAll(".box");
 for (let btn of allBtns) {
   btn.addEventListener("click", btnPress);
+  btn.addEventListener("touchstart", btnPress);  // For mobile touch devices
 }
 function reset() {
   started = false;
