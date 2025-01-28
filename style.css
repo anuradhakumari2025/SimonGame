@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: rgb(99, 91, 91);
+  background: linear-gradient(to right, #000428, #004e92);
 }
 p {
   font-size: 2rem;
@@ -9,6 +9,15 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+#title{
+  font-size: 5vw;
+  color: #4CA1AF;
+  font-weight: 800;
+}
+#press{
+  font-size: 2rem;
+  color: #F29492;
 }
 .box {
   border-radius: 30%;
@@ -22,20 +31,20 @@ p {
   margin: 1rem;
 }
 .red {
-  background-color: rgb(45, 149, 180);
+  background-color: rgb(255, 1, 1);
 }
 .blue {
-  background-color: rgb(131, 52, 184);
+  background-color: rgb(25, 0, 255);
 }
 .green {
-  background-color: rgb(228, 120, 138);
+  background-color: rgb(4, 248, 57);
 }
 .yellow {
-  background-color: rgb(214, 34, 118);
+  background-color: rgb(255, 230, 1);
 }
 .flash {
   background-color: white;
 }
 .userFlash {
-  background-color: rgb(6, 109, 75);
+  background-color: rgba(45, 155, 170, 0.849);
 }
